@@ -37,7 +37,7 @@ Here's an example for a project based on experimental data collection:
 
 Here's an example for a project based on data acquired from public databases:
 
-![alejo_castell_flowchart](alejo_castell_flowchart.png)
+![alejo_castell_flowchart](C:\Users\diega\OneDrive - Universidad de Los Andes\UNIANDES\UNIANDES 2021-10\Reproducibilidad\alejo_castell_flowchart.png)
 
 ####  Metadata
 
