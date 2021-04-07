@@ -37,6 +37,7 @@ Here's an example for a project based on experimental data collection:
 
 Here's an example for a project based on data acquired from public databases:
 
+![alejo_castell_flowchart](alejo_castell_flowchart.png)
 
 ####  Metadata
 This is a **mandatory** piece of documentation accompanying **all** data sets used in the project that details the source and the process of data acquisition and processing.
@@ -64,16 +65,58 @@ o Contain the following sections for _each entry_:
 
 ####  File Structure:
 This is the suggested (required?) file structure for the folder ...
-1. 01_Quality
-2. 02_Trimming
-3. 03_Quality_Trimming
-4. 04_Assembly
-5. 05_Results_Figures
-6. 06_Results_Tables
-7. 07_Manuscript
+
+```bash
+./Folder/
+├── README.md
+├── 01_Quality
+├── 02_Trimming
+├── 03_Quality_Trimming
+├── 04_Assembly
+├── 05_Results_Figures
+├── 06_Results_Tables
+└── 07_Manuscript
+```
+
+In some cases this could be organized by folders representing each step of the project. In the case of data:
+
+```bash
+./Data/
+├── README.md
+├── reads_raw
+│   └── <file_name>.fa
+├── reads_quality
+├── reads_clean
+├── reads_mapping
+├── genomes_quality
+│   ├── CheckM
+│   ├── Quast
+|   └── Miga
+├── genomes_anotation
+├── genomes_orthologs
+└── secretion_systems_shrimps
+```
+
+Or in the case of codes and scripts:
+
+```bash
+./Scripts/
+├── README.md
+├── Bowtie2
+│   ├── log_files
+│   ├── output_files
+|   ├── Scripts
+|   |   ├── <DataType_TypeProcessing>.sh
+|   |   ├── plasmid_quality.sh
+└── └── └── genomes_quality.sh
+```
 
 #####  File Naming Conventions:
 These are the conventions adopted by our lab to ensure as much as possible an understanding of what is contained in a file: …
+
+```bash
+<DataType_TypeProcessing>.sh
+```
 
 #### Script Requirements
 
@@ -103,8 +146,8 @@ There must be one README per project module
 Here's a repository containing an example of an ideal script and its associated README file: 
 
 ####  Git repository usage
-Note that this is not a requirement yet, advanced users only.
-Link to a tutorial?
+Note that this is not a requirement yet, advanced users only ([link to a complete tutorial](https://github.com/BCEM-UniAndes/git-guide.git)):
+
 1. Each _commit_ must be adequately described: consistent, without omitting
 information
 2. DO NOT _commit_ on incomplete or unstable versions of the script
