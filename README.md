@@ -110,6 +110,112 @@ There must be one README per project module
 
 Here's a repository containing an example of an ideal script and its associated README file: 
 
+```bash
+#!/usr/bin/bash
+
+
+#SBATCH -p medium                        
+#SBATCH -N 1                           
+#SBATCH -n 1
+#SBATCH --cpus-per-task=15
+#SBATCH --mem=61440       
+#SBATCH --time=73:00:00 
+#SBATCH -o Outputs/trainRF.o%j
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=lc.camelo10@uniandes.edu.co
+
+
+######### How to Run #########
+#sbatch scripts/trainRF.sh /hpcfs/home/lc.camelo10/JovenInvestigador/Outputs/Files/Data_PairedRelationsTRAINToTetramers.tsv
+
+######### Description #########
+# To Train the random forest model 
+#Written by Laura Carolina Camelo Valera at Computational Biology and Microbial Ecology lab (BCEM)
+#Institution: Los Andes University, Colombia
+#email. lc.camelo10@uniandes.edu.co
+
+
+######### Parameters #########
+#1 Train matrix, phage-bacteria pairs
+
+module load R/3.5.1mro
+
+date 
+
+echo "Predicting interactions ..."
+
+Rscript ~/JovenInvestigador/RScripts/Train.R $1
+
+echo "Model Implemented"
+
+date
+
+```
+
+```R
+#######################################
+######    script description     ######
+#######################################
+# To Test the random forest model, the train and test datasets must be loaded 
+#Written by Laura Carolina Camelo Valera
+#Written by Laura Carolina Camelo Valera at Computational Biology and Microbial Ecology lab (BCEM)
+#Institution: Los Andes University, Colombia
+#email. lc.camelo10@uniandes.edu.co
+
+
+######### Parameters #########
+#1 Train matrix, phage-bacteria pairs
+
+#Activate arguments reading
+args = commandArgs(trailingOnly=TRUE)
+
+# test if there is at least one argument: if not, return an error
+if (length(args)==0) {
+  stop("At least one argument must be supplied (input file).n", call.=FALSE)
+}
+
+
+#### Arguments Setting ####
+train_PhageBacteriaPairs =  args[1]
+
+#Required libraries
+library(caret)
+library(randomForest)
+library(tictoc)
+library(parallel)
+library(doMC)
+
+#Número de cores a usar    
+registerDoMC(cores=15)
+
+#Function File
+source("~/JovenInvestigador/RScripts/functionsProject.R")
+
+#Required data
+Data_PairedRelations <- read.table(train_PhageBacteriaPairs,h=T,sep="\t")
+#Data_PairedRelations_test <- read.table(test_PhageBacteriaPairs,h=T,sep="\t")
+print("Datasets loaded")
+
+
+#load("/hpcfs/home/lc.camelo10/JovenInvestigador/DataPairsTest.RData")
+#load("/hpcfs/home/lc.camelo10/JovenInvestigador/DataPairsTrain.RData")
+
+#to tetramers
+Data_PairedRelations$Interaction<-as.factor(Data_PairedRelations$Interaction)
+tic()
+rf_PairedDistances=randomForest(y=Data_PairedRelations$Interaction,
+                                         x=Data_PairedRelations[,10:152],
+                                         subset=1:nrow(Data_PairedRelations))
+
+toc()
+
+saveRDS(rf_PairedDistances, "/hpcfs/home/lc.camelo10/JovenInvestigador/Outputs/model/rf_model.RDS")
+
+
+```
+
+
+
 ####  Git repository usage
 Note that this is not a requirement yet, advanced users only.
 Link to a tutorial?
