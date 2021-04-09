@@ -41,7 +41,7 @@ Here's an example for a project based on data acquired from public databases:
 
 
 
-![Viroma_Diagram](/home/maat/Documents/2020-2/Journal/Reproducilidad/Reproducibility-Guidelines/Viroma_Diagram.png)
+![Viroma_Diagram](Viroma_Diagram.png)
 
 
 
