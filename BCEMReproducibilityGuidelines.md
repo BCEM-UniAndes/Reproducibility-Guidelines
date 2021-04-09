@@ -35,7 +35,7 @@ We suggest using a service such as[ diagrams.net](https://www.diagrams.net/) to 
 
 Here's an example for a project based on experimental data collection:
 
-https://drive.google.com/file/d/1LBQmqfZ7jazSCwo4SDaVt0zGIlAXZnWL/view?usp=sharing
+![Ositos_Diagram](C:\Users\LENOVO\Desktop\Ositos_Diagram.png)
 
 Here's an example for a project based on data acquired from public databases:
 
@@ -66,7 +66,114 @@ o Contain the following sections for _each entry_:
 
 Example of notebook in metagenomics:
 
-https://docs.google.com/document/d/1t0oADvhhDQ7FcYpqnU5-QJ9TPXwT9xN5kfkXls2jPmU/edit?usp=sharing
+```markdown
+# **Notebook Example**
+
+## **Laboratory record** 
+
+
+
+Leda Restrepo              **/ Name** 
+
+Shrimp intestinal microbiota evaluation  **/ Title of the project**
+
+
+
+### **Resume of the project**
+
+This project aims to evaluate the intestinal microbiota of shrimp using different types of probiotics. There are no studies describing what happens in the normal intestinal microbiota of shrimp. A differential improvement has been seen according to the type of probiotic used, with those containing Bacillus spp. and/or Vibrio spp. being the best. However, since several Vibrio spp. are commercially important pathogens in shrimp, there is concern that horizontal transfer may occur when probiotics are used.
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+**Entry # 1 - wet lab record                                February 24 2019**
+
+
+
+**Purpose:** Shrimp pathogen challenge day 1
+
+
+
+**Materials:** 
+
+- **probiotics A, B, C**
+- **shrimp tanks**
+
+
+
+Today we begin the process of challenging shrimp vs pathogens. The first part of this process is the application of the different types of probiotics. We divided the whole population of shrimps in three different tanks (Tank 1, 2, 3. 50 individuals per tank), each of one will feed with one of the probiotics (A,B,C). The feeding will be at noon and morning during 1 month, with water replacement after feeding. 
+
+The purpose of this process is to challenge shrimps with *V. parahemoliticus* by immersion process with the bacteria in order to see the microbiota of the survivors and compare it with those who died. We will extract and amplify 16s RNA.
+
+
+
+**Note:** 
+
+There was a small loss of color by stress in shrimps of tank 1. 
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+**Entry # 23 - in silico lab record**                            **May 13 2019**
+
+
+
+**Purpose:** Shrimp metagenomic evaluation
+
+
+
+**Materials:** 
+
+- **Amplicon sequences of 16S RNA (Edificio B, piso 2, revco asignado BCEM, puerta 2, rac 1 y 2).** 
+- **FASTQC**
+- **Galaxy workflow**
+
+
+
+
+
+Today we finally have the sequences of the amplicons in our hands. To start their analysis we will clean and check the quality of each one of them.
+
+We used FASTQC version 0.11.7 installed on the Universidad de Los Andes cluster.
+
+
+
+The quality was evaluated with FASTQC using the following command:
+
+
+
+fastqc seqfile1 -o salida_calidad -f fastq
+
+![img](https://lh6.googleusercontent.com/2PiQ4aY3jHvu5Kdl1PWksKN_iNBeLqYDuWwMwS20ILqra6dQQlCOFxa95vwpXLnsCHDC2NnTib8YhMA-PctiyDcLFCmWeF42tETnd2Mjkrmj5KG7Xjiv_KJcD3DJAxazZpd11sT1)
+
+**Figure 1. Fastqc evaluation for seqfile1**
+
+
+
+Due to the result of Figure 1, we submitted seqfile1 to a filter of quality by Filter FastQ, FastQ Trimmer and FastQ Quality Trimmer. We use it as a parameter for Filter FastQ 22 in quality. In FastQ Trimmer 2 bases and in FastQ Quality Trimmer 24. 
+
+
+
+![img](https://lh4.googleusercontent.com/pOYfLZYFvNmGnNpHOZMwIk2AIMgVPxbu5miJek_ROeb2xLQ4Paci2yslaWcKNXTpr_4F-sxczzJgcZ1ioZbvvje-ZtyNapwztJmdFkUG2aB6k18MDCVlYEaZEguBd02uS9cWeNX8)
+
+**Figure 2. Result after filtering for seqfile1**
+```
+
+
 
 ####  File Structure:
 This is the suggested (required?) file structure for the folder ...
@@ -114,6 +221,62 @@ There must be one README per project module
 Here's a repository containing an example of an ideal script:
 
 For Python
+
+```python
+#!/usr/bin/env python
+# coding: utf-8
+
+###About###
+#Name:Change_header_fasta.py
+#Author:Luisa Matiz
+#Description:Script to change header of fasta
+#Institution:Universidad de los Andes
+#email:lf.matiz10@uniandes.edu.co
+#Date:10-02-2019
+#Version:Python3.0 or more
+
+###Libraries### 
+import sys
+import argparse
+import click
+
+###Help###
+parser = argparse.ArgumentParser()
+parser=argparse.ArgumentParser(
+    description='''Run this script as python Change_header_fasta.py file. ''',
+    epilog="""It will produce a header assignation by sequence position in input fasta""")
+parser.add_argument("file", help="input fasta file")
+parser.add_argument("version", help="python 3 or more")
+args = parser.parse_args()
+print(args.file)
+print (args.version)
+
+###Comands###
+#load the input file
+f=(sys.argv[1])
+file = open(sys.argv[1],'r')
+labels=f.split(".")
+
+#open the new fasta file without data  
+handle = open(labels[0]+"_new"+".fasta","w")
+line=file.readlines()
+
+#Star the line by line revision of the header
+count=0
+for l in line:
+    results=l.startswith(">")
+    results 
+    if results == True:
+        count+=1
+        handle.write(">"+str(count)+"_"+labels[0]+"\n") #change the header by input file name and position of the sequence in the input fasta
+    else:
+        handle.write(str(l))
+#Close final file        
+handle.close()
+ 
+
+
+```
 
 
 
