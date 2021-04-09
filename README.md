@@ -38,6 +38,14 @@ Here's an example for a project based on experimental data collection:
 Here's an example for a project based on data acquired from public databases:
 
 
+
+
+
+![Viroma_Diagram](/home/maat/Documents/2020-2/Journal/Reproducilidad/Reproducibility-Guidelines/Viroma_Diagram.png)
+
+
+
+
 ####  Metadata
 This is a **mandatory** piece of documentation accompanying **all** data sets used in the project that details the source and the process of data acquisition and processing.
 tos. We abide by the standards on Mininum Information about a Genome Sequence ([MIGS](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2409278/)), which are already adopted by specific repositories of genome sequence data such as the European Nucleotide Archive ([ENA](https://www.ebi.ac.uk/ena/browser/)).
