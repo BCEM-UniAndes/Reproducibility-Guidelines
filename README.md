@@ -37,7 +37,7 @@ Here's an example for a project based on experimental data collection:
 
 Here's an example for a project based on data acquired from public databases:
 
-![alejo_castell_flowchart](alejo_castell_flowchart.png)
+![alejo_castell_flowchart](flujo_genomica.png)
 
 ####  Metadata
 This is a **mandatory** piece of documentation accompanying **all** data sets used in the project that details the source and the process of data acquisition and processing.
