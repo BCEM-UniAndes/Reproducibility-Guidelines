@@ -89,7 +89,7 @@ The quality was evaluated with FASTQC using the following command:
 
 fastqc seqfile1 -o salida_calidad -f fastq
 
-![img](https://lh6.googleusercontent.com/2PiQ4aY3jHvu5Kdl1PWksKN_iNBeLqYDuWwMwS20ILqra6dQQlCOFxa95vwpXLnsCHDC2NnTib8YhMA-PctiyDcLFCmWeF42tETnd2Mjkrmj5KG7Xjiv_KJcD3DJAxazZpd11sT1)
+![fig1.png](fig1.png)
 
 **Figure 1. Fastqc evaluation for seqfile1**
 
@@ -99,6 +99,7 @@ Due to the result of Figure 1, we submitted seqfile1 to a filter of quality by F
 
 
 
-![img](https://lh4.googleusercontent.com/pOYfLZYFvNmGnNpHOZMwIk2AIMgVPxbu5miJek_ROeb2xLQ4Paci2yslaWcKNXTpr_4F-sxczzJgcZ1ioZbvvje-ZtyNapwztJmdFkUG2aB6k18MDCVlYEaZEguBd02uS9cWeNX8)
+![fig2.png](fig2.png)
+
 
 **Figure 2. Result after filtering for seqfile1**
