@@ -10,9 +10,9 @@ Shrimp intestinal microbiota evaluation  **/ Title of the project**
 
 
 
-### **Project summary**
+### **Resume of the project**
 
-This project aims to evaluate the intestinal microbiota of shrimp using different types of probiotics. There are no studies describing what happens to the healthy intestinal microbiota of shrimp after exposure to these probiotics. A differential improvement has been seen according to the type of probiotic used, with those containing _Bacillus spp_. and/or _Vibrio spp_. being the most promising. However, since several _Vibrio spp_. are commercially important pathogens in shrimp, there is concern that horizontal transfer may occur when probiotics are used.
+This project aims to evaluate the intestinal microbiota of shrimp using different types of probiotics. There are no studies describing what happens in the normal intestinal microbiota of shrimp. A differential improvement has been seen according to the type of probiotic used, with those containing Bacillus spp. and/or Vibrio spp. being the best. However, since several Vibrio spp. are commercially important pathogens in shrimp, there is concern that horizontal transfer may occur when probiotics are used.
 
 
 
@@ -59,7 +59,7 @@ There was a small loss of color by stress in shrimps of tank 1.
 
 
 
-**Entry # 23 - _in silico_ lab record**                            **May 13 2019**
+**Entry # 23 - in silico lab record**                            **May 13 2019**
 
 
 
@@ -77,9 +77,9 @@ There was a small loss of color by stress in shrimps of tank 1.
 
 
 
-Today we finally have the sequences of the amplicons in our hands. To begin with the analysis, we will clean and check the quality of each one of the sequence files.
+Today we finally have the sequences of the amplicons in our hands. To start their analysis we will clean and check the quality of each one of them.
 
-We used FASTQC version 0.11.7 installed on the Universidad de Los Andes Magnus cluster.
+We used FASTQC version 0.11.7 installed on the Universidad de Los Andes cluster.
 
 
 
