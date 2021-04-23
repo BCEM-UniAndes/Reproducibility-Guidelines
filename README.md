@@ -63,6 +63,10 @@ o Contain the following sections for _each entry_:
         • Must be commented (interpretations of what has been found)
     • Indication of where the (intermediate) data was deposited (path, link).
 
+Example of notebook in genomics (computational):
+
+[Computational notebook](NotebookExample_computational.md)
+
 ####  File Structure:
 This is the suggested (required?) file structure for the folder ...
 
