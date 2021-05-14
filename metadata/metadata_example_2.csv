@@ -1,21 +1,21 @@
-Common name;Classification group;Scientific name;Access Number;Genome estimated size (Mb);%GC;# scaffolds (genome);Taxonomic group;Order;Download date
-Red flour beetle;Insect;Tribolium castaneum;GCF_000002335.3;165,944;35,1887;2149;Endopterygota;Coleótera;23/10/2019
-Pea aphid;Insect;Acyrthosiphon pisum;GCF_005508785.1;541,415;29,6956;21920;Paraneoptera;Hemíptera;23/10/2019
-Domestic silk moth;Insect;Bombyx mori;GCF_000151625.1;397,687;37,8;43463;Endopterygota;Lepidóptera;23/10/2019
-Migratory locust;Insect;Locusta migratoria;GCA_000516895.1;5759,8;40,7;-;Polyneoptera;Ortóptera;23/10/2019
-Indian jumping ant;Insect;Harpegnathos saltator;GCF_003227715.1;334,537;44,8;857;Endopterygota;Himenóptera;23/10/2019
-Whale shark;Fish;Rhincodon typus;GCF_001642345.1;2931,6;41,8;57334;Chondrichthyes;Orectolobiformes;23/10/2019
-Three-spined stickleback;Fish;Gasterosteus aculeatus;GCA_006229165.1;467,452;43,4;10242;Euacanthomorphacea;Gasterosteiformes;23/10/2019
-Atlantic cod;Fish;Gadus morhua;GCF_000231765.1;669,966;45,8;227;Paracanthomorphacea;Gadiformes;15/10/2020
-Nile tilapia;Fish;Oreochromis niloticus;GCF_001858045.1;966,688;40,7187;2460;Euacanthomorphacea;Perciformes;15/10/2020
-Atlantic salmon;Fish;Salmo salar;GCF_000233375.1;2996,89;43,8912;241573;Protacanthopterygii;Salmoniformes;15/10/2020
-Pond slider;Reptile;Trachemys scripta;GCF_013100865.1;2126,2;44,04601;138;Archelosauria;Testudines;27/04/2021
-Green anole;Reptile;Anolis carolinensis;GCF_000090745.1;1799,14;40,8238;6646;Lepidosauria;Squamata;27/04/2021
-American alligator;Reptile;Alligator mississippiensis ;GCF_000281125.3;2161,71;44,3;7094;Archosauria;Crocodylia;5/11/2020
-Chicken;Reptile;Gallus gallus;GCF_016699485.2;1037,17;42,2313;525;Archosauria/Dinosauria;Galliformes;27/04/2021
-White-rumped munia;Reptile;Lonchura striata;GCF_005870125.1;1060,22;41,1135;2015;Archosauria/Dinosauria;Passeriformes;27/04/2021
-Tasmanian devil;Mammal;Sarcophilus harrisii;GCF_902635505.1;3174,69;37;106;Metatheria;Dasyuromorphia;27/04/2021
-House mouse;Mammal;Mus musculus;GCF_000001635.27;2689,66;42,4891;102;Eutheria;Rodentia;27/04/2021
-Platypus;Mammal;Ornithorhynchus anatinus;GCF_004115215.2;1924,85;46,2349;305;Prototheria;Monotremata;27/04/2021
-Domestic pig;Mammal;Sus scrofa;GCF_000003025.6;2459,03;41,5;706;Eutheria;Artiodactyla;27/04/2021
-Gray short-tailed opossum;Mammal;Monodelphis domestica;GCF_000002295.2;3598,44;38,1446;5223;Metatheria;Didelphimorphia;27/04/2021
+Common_name;Classification_group;Scientific_name;Access_Number;Genome_estimated_size_(Mb);%GC;#_scaffolds_(genome);Taxonomic_group;Order;Download_date
+Red_flour_beetle;Insect;Tribolium_castaneum;GCF_000002335.3;165,944;35,1887;2149;Endopterygota;Coleótera;23/10/2019
+Pea_aphid;Insect;Acyrthosiphon_pisum;GCF_005508785.1;541,415;29,6956;21920;Paraneoptera;Hemíptera;23/10/2019
+Domestic_silk_moth;Insect;Bombyx_mori;GCF_000151625.1;397,687;37,8;43463;Endopterygota;Lepidóptera;23/10/2019
+Migratory_locust;Insect;Locusta_migratoria;GCA_000516895.1;5759,8;40,7;-;Polyneoptera;Ortóptera;23/10/2019
+Indian_jumping_ant;Insect;Harpegnathos_saltator;GCF_003227715.1;334,537;44,8;857;Endopterygota;Himenóptera;23/10/2019
+Whale_shark;Fish;Rhincodon_typus;GCF_001642345.1;2931,6;41,8;57334;Chondrichthyes;Orectolobiformes;23/10/2019
+Three-spined_stickleback;Fish;Gasterosteus_aculeatus;GCA_006229165.1;467,452;43,4;10242;Euacanthomorphacea;Gasterosteiformes;23/10/2019
+Atlantic_cod;Fish;Gadus_morhua;GCF_000231765.1;669,966;45,8;227;Paracanthomorphacea;Gadiformes;15/10/2020
+Nile_tilapia;Fish;Oreochromis_niloticus;GCF_001858045.1;966,688;40,7187;2460;Euacanthomorphacea;Perciformes;15/10/2020
+Atlantic_salmon;Fish;Salmo_salar;GCF_000233375.1;2996,89;43,8912;241573;Protacanthopterygii;Salmoniformes;15/10/2020
+Pond_slider;Reptile;Trachemys_scripta;GCF_013100865.1;2126,2;44,04601;138;Archelosauria;Testudines;27/04/2021
+Green_anole;Reptile;Anolis_carolinensis;GCF_000090745.1;1799,14;40,8238;6646;Lepidosauria;Squamata;27/04/2021
+American_alligator;Reptile;Alligator_mississippiensis ;GCF_000281125.3;2161,71;44,3;7094;Archosauria;Crocodylia;5/11/2020
+Chicken;Reptile;Gallus_gallus;GCF_016699485.2;1037,17;42,2313;525;Archosauria/Dinosauria;Galliformes;27/04/2021
+White-rumped_munia;Reptile;Lonchura_striata;GCF_005870125.1;1060,22;41,1135;2015;Archosauria/Dinosauria;Passeriformes;27/04/2021
+Tasmanian_devil;Mammal;Sarcophilus_harrisii;GCF_902635505.1;3174,69;37;106;Metatheria;Dasyuromorphia;27/04/2021
+House_mouse;Mammal;Mus_musculus;GCF_000001635.27;2689,66;42,4891;102;Eutheria;Rodentia;27/04/2021
+Platypus;Mammal;Ornithorhynchus_anatinus;GCF_004115215.2;1924,85;46,2349;305;Prototheria;Monotremata;27/04/2021
+Domestic_pig;Mammal;Sus_scrofa;GCF_000003025.6;2459,03;41,5;706;Eutheria;Artiodactyla;27/04/2021
+Gray_short-tailed_opossum;Mammal;Monodelphis_domestica;GCF_000002295.2;3598,44;38,1446;5223;Metatheria;Didelphimorphia;27/04/2021
