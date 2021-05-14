@@ -35,15 +35,15 @@ We suggest using a service such as[ diagrams.net](https://www.diagrams.net/) to 
 
 Here's an example for a project based on experimental data collection:
 
-![Ositos_Diagram.png](Ositos_Diagram.png)
+![Ositos_Diagram.png](work_flows/Ositos_Diagram.png)
 
-Other examples for a projects based on data acquired from public databases are [Mind map 1](flujo_genomica.png) (genomics' project) and [Mind map 2](Ositos_Diagram.png) (microbiomes' project).
+Other examples for a projects based on data acquired from public databases are [Mind map 1](work_flows/flujo_genomica.png) (genomics' project) and [Mind map 2](work_flows/Viroma_Diagram.png) (viromes' project).
 
 
 ####  Metadata
 This is a **mandatory** piece of documentation accompanying **all** data sets used in the project that details the source and the process of data acquisition and processing. We abide by the standards on Minimum Information about a Genome Sequence ([MIGS](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2409278/)), which are already adopted by specific repositories of genome sequence data such as the European Nucleotide Archive ([ENA](https://www.ebi.ac.uk/ena/browser/)).
 
-An example for a project based on experimental data collection is [this csv file](metada_example.csv). Additionally, other illustration of metadata file based on data obtained from open source database is in [this excel spreadsheet](metadata_example_2.xlsx)
+An example for a project based on experimental data collection is [this csv file](metadata/metada_example.csv). Additionally, other illustration of metadata file based on data obtained from open source database is in [this excel spreadsheet](metadata/metadata_example_2.xlsx)
 
 ####  Raw Data
 Raw data must be stored under our lab's ENA account _immediately_ upon receival. The guidelines for submission are as follows:
@@ -67,9 +67,9 @@ These documents _must_:
 
 Here are some notebooks which illustrate the previous guidelines:
 
-- Example of notebook in metagenomics (experimental): [Experimental notebook](NotebookExample.md)
+- Example of notebook in metagenomics (experimental): [Experimental notebook](notebooks/NotebookExample.md)
 
-- Example of notebook in genomics (computational): [Computational notebook](NotebookExample_computational.md)
+- Example of notebook in genomics (computational): [Computational notebook](notebooks/NotebookExample_computational.md)
 
 
 ####  File Structure:
@@ -153,7 +153,7 @@ There must be one README per project module
 7. TYPORA
 8. Results graphs (if applicable)
 
-Here is an example of an ideal script that has an associated [README](ScriptsREADME.md) file: 
+Here is an example of an [ideal script](codes/trainRF.sh) that has an associated [README](codes/ScriptsREADME.md) file: 
 
 ```bash
 #!/usr/bin/bash
@@ -197,7 +197,7 @@ date
 
 ```
 
-There are also examples of ideal scripts in [R](Train.R) and [Python](Change_header_fasta.py).
+There are also examples of ideal scripts in [R](codes/Train.R) and [Python](codes/Change_header_fasta.py).
 
 ####  Git repository usage
 
