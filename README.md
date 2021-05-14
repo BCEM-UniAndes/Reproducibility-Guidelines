@@ -35,6 +35,7 @@ We suggest using a service such as[ diagrams.net](https://www.diagrams.net/) to 
 
 Here's an example for a project based on experimental data collection:
 
+
 Here's an example for a project based on data acquired from public databases:
 
 ![alejo_castell_flowchart](flujo_genomica.png)
@@ -70,6 +71,10 @@ o Contain the following sections for _each entry_:
         • Must include relevant tables, graphs, etc. (or links to where these are stored, in case of large files)
         • Must be commented (interpretations of what has been found)
     • Indication of where the (intermediate) data was deposited (path, link).
+
+Example of notebook in metagenomics:
+
+
 
 Example of notebook in genomics (computational):
 
