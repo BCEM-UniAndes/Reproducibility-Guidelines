@@ -1,0 +1,5 @@
+"Sample_ID","Sample_name","Individual","gr/used","InitialVol","FinalVol","DNA obtained","DNA_protocol","ngDNA/gr","16PCR","vDNA_Date","DNA_Date","LibraryConc","Library_Date","Library_Type","Region","Sequencing_Date","#Reads","Run_Prefix","SampleDate","Age","physiological_parameter_1"
+"Sample_1_1","soil_time0_herbicide25","B",0.03,0.4,0.2,1.8,"x",3.6,1,"21.10.06","21.10.06",2.03E+08,"10.10.07","RL1",2,"2010_10_21_09_26_13",20629,"GPT65Z1",9/29/2004,21.49,9.16
+"Sample_1_2","soil_time0_herbicide50","B",,,,,"x",,,"21.11.20","21.11.20",,,,,,,,,,
+"Sample_1_3","soil_time0_herbicide75","A",0.0795,0.4,0.2,1.66,"y",1.25283018867925,1,"21.10.08","21.10.08",9.38E+08,"10.10.09","RL5",2,"2010_10_21_09_26_13",71961,"GPT65Z1",12/22/2004,24.25,9.48
+"Sample_1_4","soil_time0_herbicide100","A",0.1094,0.4,0.2,4.94,"y",2.70932358318099,1,"21.09.16","21.09.16",1.26E+09,"10.10.05","RL1",1,"2010_10_21_09_26_13",26291,"GPT65Z1",9/29/2004,21.49,9.085

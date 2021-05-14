@@ -37,21 +37,13 @@ Here's an example for a project based on experimental data collection:
 
 ![Ositos_Diagram.png](Ositos_Diagram.png)
 
-Here's an example for a project based on data acquired from public databases:
-
-![alejo_castell_flowchart](flujo_genomica.png)
-
-
-
-
-![Viroma_Diagram](Viroma_Diagram.png)
-
-
+Other examples for a projects based on data acquired from public databases are [Mind map 1](flujo_genomica.png) (genomics' project) and [Mind map 2](Ositos_Diagram.png) (microbiomes' project).
 
 
 ####  Metadata
-This is a **mandatory** piece of documentation accompanying **all** data sets used in the project that details the source and the process of data acquisition and processing.
-tos. We abide by the standards on Mininum Information about a Genome Sequence ([MIGS](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2409278/)), which are already adopted by specific repositories of genome sequence data such as the European Nucleotide Archive ([ENA](https://www.ebi.ac.uk/ena/browser/)).
+This is a **mandatory** piece of documentation accompanying **all** data sets used in the project that details the source and the process of data acquisition and processing. We abide by the standards on Minimum Information about a Genome Sequence ([MIGS](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2409278/)), which are already adopted by specific repositories of genome sequence data such as the European Nucleotide Archive ([ENA](https://www.ebi.ac.uk/ena/browser/)).
+
+An example for a project based on experimental data collection is [this csv file](metada_example.csv). Additionally, other illustration of metadata file based on data obtained from open source database is in [this excel spreadsheet](metadata_genomes.xlsx)
 
 ####  Raw Data
 Raw data must be stored under our lab's ENA account _immediately_ upon receival. The guidelines for submission are as follows:
@@ -61,28 +53,27 @@ Our lab requires that any process of data acquisition and/or processing be prope
 
 These documents _must_:
 
-o Have one per flowchart (mind map) component
-o Contain the following sections for _each entry_:
-    •Date
-    •Aim
-    •Protocol followed
-        •Command lines or methodology in the lab
-        •Third-party software (description of how it was used, under what parameters, includelink to the tutorial(s))
-    • Results 
-        • Must include relevant tables, graphs, etc. (or links to where these are stored, in case of large files)
-        • Must be commented (interpretations of what has been found)
-    • Indication of where the (intermediate) data was deposited (path, link).
+-  Have one per flowchart (mind map) component
+- Contain the following sections for _each entry_:
+  - Date
+  - Aim
+  - Protocol followed
+    - Command lines or methodology in the lab
+    - Third-party software (description of how it was used, under what parameters, include link to the tutorial(s))
+  - Results
+    - Must include relevant tables, graphs, etc. (or links to where these are stored, in case of large files)
+    - Must be commented (interpretations of what has been found)
+  - Indication of where the (intermediate) data was deposited (path, link).
 
-Example of notebook in metagenomics:
+Here are some notebooks which illustrate the previous guidelines:
 
-![NotebookExample.md](NotebookExample.md)
+- Example of notebook in metagenomics (experimental): [Experimental notebook](NotebookExample.md)
 
-Example of notebook in genomics (computational):
+- Example of notebook in genomics (computational): [Computational notebook](NotebookExample_computational.md)
 
-[Computational notebook](NotebookExample_computational.md)
 
 ####  File Structure:
-This is the suggested (required?) file structure for the folder ...
+This is the suggested file structure for the folder:
 
 ```bash
 ./Folder/
@@ -130,21 +121,19 @@ Or in the case of codes and scripts:
 ```
 
 #####  File Naming Conventions:
-These are the conventions adopted by our lab to ensure as much as possible an understanding of what is contained in a file: …
+These are the conventions adopted by our lab to ensure, as much as possible, **an understanding of what is contained in a file**. A suggested file naming convention is:
 
 ```bash
 <DataType_TypeProcessing>.sh
 ```
-Also, here's an example for a project based on experimental data collection:
-
-As protocol the establish protocol in qiime. http://qiime.org/documentation/index.html
+Also, there are numerous examples for projects based on experimental data collection, as protocol the establish protocol in *qiime*. http://qiime.org/documentation/index.html
 
 #### Script Requirements
 
 The minimum requirements for a script include:
 * The name of the file must be consistent with the function implemented.
 * Adapt to a standard of mnemonics and notation (Notation camel): 
-    * For example: NotationCamel
+    * For example: *NotationCamel*
 * Name
 * Description
 * Author
@@ -152,7 +141,7 @@ The minimum requirements for a script include:
 * Contact email
 * Date: When was it implemented
 * Help (input, output) - how to run
-* Requirements (codependencies) versions
+* Requirements (codependences) versions
 
 There must be one README per project module
 1. Version
@@ -164,7 +153,7 @@ There must be one README per project module
 7. TYPORA
 8. Results graphs (if applicable)
 
-Here's a repository containing an example of an ideal script and its associated README file: 
+Here is an example of an ideal script that has an associated [README](ScriptsREADME.md) file: 
 
 ```bash
 #!/usr/bin/bash
@@ -208,126 +197,10 @@ date
 
 ```
 
-```R
-#######################################
-######    script description     ######
-#######################################
-# To Test the random forest model, the train and test datasets must be loaded 
-#Written by Laura Carolina Camelo Valera
-#Written by Laura Carolina Camelo Valera at Computational Biology and Microbial Ecology lab (BCEM)
-#Institution: Los Andes University, Colombia
-#email. lc.camelo10@uniandes.edu.co
-
-
-######### Parameters #########
-#1 Train matrix, phage-bacteria pairs
-
-#Activate arguments reading
-args = commandArgs(trailingOnly=TRUE)
-
-# test if there is at least one argument: if not, return an error
-if (length(args)==0) {
-  stop("At least one argument must be supplied (input file).n", call.=FALSE)
-}
-
-
-#### Arguments Setting ####
-train_PhageBacteriaPairs =  args[1]
-
-#Required libraries
-library(caret)
-library(randomForest)
-library(tictoc)
-library(parallel)
-library(doMC)
-
-#Número de cores a usar    
-registerDoMC(cores=15)
-
-#Function File
-source("~/JovenInvestigador/RScripts/functionsProject.R")
-
-#Required data
-Data_PairedRelations <- read.table(train_PhageBacteriaPairs,h=T,sep="\t")
-#Data_PairedRelations_test <- read.table(test_PhageBacteriaPairs,h=T,sep="\t")
-print("Datasets loaded")
-
-
-#load("/hpcfs/home/lc.camelo10/JovenInvestigador/DataPairsTest.RData")
-#load("/hpcfs/home/lc.camelo10/JovenInvestigador/DataPairsTrain.RData")
-
-#to tetramers
-Data_PairedRelations$Interaction<-as.factor(Data_PairedRelations$Interaction)
-tic()
-rf_PairedDistances=randomForest(y=Data_PairedRelations$Interaction,
-                                         x=Data_PairedRelations[,10:152],
-                                         subset=1:nrow(Data_PairedRelations))
-
-toc()
-
-saveRDS(rf_PairedDistances, "/hpcfs/home/lc.camelo10/JovenInvestigador/Outputs/model/rf_model.RDS")
-
-
-```
-
-For Python
-
-```python
-#!/usr/bin/env python
-# coding: utf-8
-
-###About###
-#Name:Change_header_fasta.py
-#Author:Luisa Matiz
-#Description:Script to change header of fasta
-#Institution:Universidad de los Andes
-#email:lf.matiz10@uniandes.edu.co
-#Date:10-02-2019
-#Version:Python3.0 or more
-
-###Libraries### 
-import sys
-import argparse
-import click
-
-###Help###
-parser = argparse.ArgumentParser()
-parser=argparse.ArgumentParser(
-    description='''Run this script as python Change_header_fasta.py file. ''',
-    epilog="""It will produce a header assignation by sequence position in input fasta""")
-parser.add_argument("file", help="input fasta file")
-parser.add_argument("version", help="python 3 or more")
-args = parser.parse_args()
-print(args.file)
-print (args.version)
-
-###Comands###
-#load the input file
-f=(sys.argv[1])
-file = open(sys.argv[1],'r')
-labels=f.split(".")
-
-#open the new fasta file without data  
-handle = open(labels[0]+"_new"+".fasta","w")
-line=file.readlines()
-
-#Star the line by line revision of the header
-count=0
-for l in line:
-    results=l.startswith(">")
-    results 
-    if results == True:
-        count+=1
-        handle.write(">"+str(count)+"_"+labels[0]+"\n") #change the header by input file name and position of the sequence in the input fasta
-    else:
-        handle.write(str(l))
-#Close final file        
-handle.close()
- 
-
-
+There are also examples of ideal scripts in [R](Train.R) and [Python](Change_header_fasta.py).
 
 ####  Git repository usage
+
 Note that this is not a requirement yet, advanced users only ([link to a complete tutorial](https://github.com/BCEM-UniAndes/git-guide.git)):
 
 1. Each _commit_ must be adequately described: consistent, without omitting
@@ -339,10 +212,3 @@ that corresponds, do _merge_, do _push_)
 5. Only _push_ to the master branch once ...(?)
 6. Main folder will be the project with a README and a workflow 
 7. Within each project there are modules and each module folder must contain a README file
-
-
-
-> Note: !
-
-Add text here.
-
