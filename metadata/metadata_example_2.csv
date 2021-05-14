@@ -1,5 +1,5 @@
 Common_name,Classification_group,Scientific_name,Access_Number,Genome_estimated_size_(Mb),%GC,#_scaffolds_(genome),Taxonomic_group,Order,Download_date
-Red_flour_beetle,Insect,Tribolium_castaneum,GCF_000002335.3,165.944,35.1887,2149,Endopterygota,Coleótera,23/10/2019
+Red_flour_beetle,Insect,Tribolium_castaneum,GCF_000002335.3,165.944,35.1887,2149,Endopterygota,Coleóptera,23/10/2019
 Pea_aphid,Insect,Acyrthosiphon_pisum,GCF_005508785.1,541.415,29.6956,21920,Paraneoptera,Hemíptera,23/10/2019
 Domestic_silk_moth,Insect,Bombyx_mori,GCF_000151625.1,397.687,37.8,43463,Endopterygota,Lepidóptera,23/10/2019
 Migratory_locust,Insect,Locusta_migratoria,GCA_000516895.1,5759.8,40.7,-,Polyneoptera,Ortóptera,23/10/2019
