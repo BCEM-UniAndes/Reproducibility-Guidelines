@@ -2,7 +2,7 @@
 
 ## Experimental metadata
 
-Following description corresponds to information stored in columns of the [experimental metadata file](**./metadata_example.csv**):
+Following description corresponds to information stored in columns of the [experimental metadata file](**metadata_example.csv**):
 
 | Column label              | Description |
 | ------------------------- | ----------- |
@@ -33,7 +33,7 @@ Following description corresponds to information stored in columns of the [exper
 
 ## Open source metadata
 
-Following description corresponds to information stored in columns of the [metadata file](**./metadata_example_2.csv**) for data obtained from an open source database (NCBI):
+Following description corresponds to information stored in columns of the [metadata file](**metadata_example_2.csv**) for data obtained from an open source database (NCBI):
 
 | Column label               | Description                                              |
 | -------------------------- | -------------------------------------------------------- |
