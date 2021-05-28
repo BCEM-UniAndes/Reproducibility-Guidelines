@@ -19,7 +19,7 @@ This tutorial covers the following aspects around research data management:
 * Version control
 
 #### Project folder in the Cloud:
-Every member in the lab needs to set up a project folder in a Cloud service of choice (Google Drive, OneDrive, Dropbox) in agreement with all project collaborators. This folder serves an essential purpose: to store the most important documents related to the project that will allow all parties to understand the project's developments. There is a suggested file structure and naming conventions for all files in this folder (see sections XXX and YYY, below).
+Every member in the lab needs to set up a project folder in a Cloud service of choice (Google Drive, OneDrive, Dropbox) in agreement with all project collaborators. This folder serves an essential purpose: to store the most important documents related to the project that will allow all parties to understand the project's developments. There is a suggested file structure and naming conventions for all files in this folder **(see sections XXX and YYY, below)**.
 
 #### Mind map:
 At first glance, you may wonder why this step is necessary, and one of the first one in the guide. After all, you may have joined us thinking about _getting your hands dirty_ with data. But, sometimes, it is a good idea to slow down, consider where to look and what to look for. At first, it may seem that nothing is happening. In time, you'll realize this is a helpful roadmap  – one that is meant to develop with your understanding of your project and the hints you receive from your results.
@@ -43,7 +43,7 @@ Other examples for a projects based on data acquired from public databases are [
 ####  Metadata
 This is a **mandatory** piece of documentation accompanying **all** data sets used in the project that details the source and the process of data acquisition and processing. We abide by the standards on Minimum Information about a Genome Sequence ([MIGS](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2409278/)), which are already adopted by specific repositories of genome sequence data such as the European Nucleotide Archive ([ENA](https://www.ebi.ac.uk/ena/browser/)).
 
-An examples for a metadata files based on experimental data collection and data obtained from open source database is in [metadata](./metadata) folder.
+Examples for a metadata files based on experimental data collection and data obtained from open source database is in [metadata](./metadata) folder.
 
 ####  Raw Data
 Raw data must be stored under our lab's ENA account _immediately_ upon receival. The guidelines for submission are as follows:
@@ -126,7 +126,7 @@ These are the conventions adopted by our lab to ensure, as much as possible, **a
 ```bash
 <DataType_TypeProcessing>.sh
 ```
-Also, there are numerous examples for projects based on experimental data collection, as protocol the establish protocol in *qiime*. http://qiime.org/documentation/index.html
+Also, there are numerous examples for projects based on experimental data collection, as the established protocol in *qiime*. http://qiime.org/documentation/index.html
 
 #### Script Requirements
 
