@@ -19,7 +19,7 @@ This tutorial covers the following aspects around research data management:
 * Version control
 
 #### Project folder in the Cloud:
-Every member in the lab needs to set up a project folder in a Cloud service of choice (Google Drive, OneDrive, Dropbox) in agreement with all project collaborators. This folder serves an essential purpose: to store the most important documents related to the project that will allow all parties to understand the project's developments. There is a suggested file structure and naming conventions for all files in this folder **(see sections XXX and YYY, below)**.
+Every member in the lab needs to set up a project folder in a Cloud service of choice (Google Drive, OneDrive, Dropbox) in agreement with all project collaborators. This folder serves an essential purpose: to store the most important documents related to the project that will allow all parties to understand the project's developments. There is a suggested file structure and naming conventions for all files in this folder **(see sections "[File Structure](#file-structure-)" and "[File Naming Conventions](#file-naming-conventions-)", below)**.
 
 #### Mind map:
 At first glance, you may wonder why this step is necessary, and one of the first one in the guide. After all, you may have joined us thinking about _getting your hands dirty_ with data. But, sometimes, it is a good idea to slow down, consider where to look and what to look for. At first, it may seem that nothing is happening. In time, you'll realize this is a helpful roadmap  – one that is meant to develop with your understanding of your project and the hints you receive from your results.
@@ -72,7 +72,7 @@ Here are some notebooks which illustrate the previous guidelines:
 - Example of notebook in genomics (computational): [Computational notebook](notebooks/NotebookExample_computational.md)
 
 
-####  File Structure:
+####  File Structure :
 This is the suggested file structure for the folder:
 
 ```bash
@@ -120,7 +120,7 @@ Or in the case of codes and scripts:
 └── └── └── genomes_quality.sh
 ```
 
-#####  File Naming Conventions:
+#####  File Naming Conventions :
 These are the conventions adopted by our lab to ensure, as much as possible, **an understanding of what is contained in a file**. A suggested file naming convention is:
 
 ```bash
